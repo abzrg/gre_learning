@@ -1,0 +1,64 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage[margin=1.27cm]{geometry}
+\usepackage[inline]{enumitem}
+\usepackage{amssymb}
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[hidelinks]{hyperref}
+\usepackage{xcolor}
+\newcommand{\wrd}[1]{\textbf{#1}}
+\newcommand{\US}{\textsc{us}}
+\newcommand{\UK}{\textsc{uk}}
+\newcommand{\fml}{\textsc{formal}}
+\newcommand{\infml}{\textsc{informal}}
+\newcommand{\tsc}[1]{\textsc{#1}}
+\newcommand{\U}{\textsc{u}}
+\newcommand{\C}{\textsc{c}}
+\newcommand{\I}{\textsc{i}}
+\newcommand{\T}{\textsc{t}}
+\newcommand{\newitem}{\item[$\rightsquigarrow$]}
+\newcommand{\lit}{\tsc{literary}}
+\newcommand{\nth}[1]{{\bf\small\textsc{#1.}}}
+
+% \usepackage{fontspec}
+% \setmainfont{verdana}
+% \usepackage{times}
+% \usepackage{beton}
+% \usepackage[charter]{mathdesign}
+% \usepackage[]{XCharter}
+% \usepackage[default,regular,black]{sourceserifpro}
+% \usepackage[T1]{fontenc}
+
+\title{\textbf{GregMat's Word Mountain}}
+\author{}
+\date{}
+
+% Table of content
+\setcounter{secnumdepth}{0}
+\usepackage{multicol}
+\makeatletter
+\renewcommand\tableofcontents{%
+    \section*{\makebox[\linewidth][c]{\contentsname}%
+      \@mkboth{\MakeUppercase\contentsname}{\MakeUppercase\contentsname}}%
+    \begin{multicols}{2}%
+    \@starttoc{toc}%
+    \end{multicols}
+    }
+\makeatother
+\makeatletter
+\renewcommand*\l@section{\@dottedtocline{1}{1.5em}{2.3em}}
+\makeatother
+
+
+\begin{document}
+\sffamily
+\maketitle
+\tableofcontents%
+\let\thefootnote\relax\footnotetext{* \textcolor{red}{Red} groups: some of the definitions are from the Online Cambridge Dictionary.}
+
+% \fontfamily{pag}\selectfont
+
+\input{all}
+
+\end{document}
+
