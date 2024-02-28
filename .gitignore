@@ -1,2 +1,5 @@
 build/
 *.pdf
+gb/
+us/
+*.txt
